@@ -492,7 +492,6 @@ namespace Chess
             ChessBoard clone =  new ChessBoard(chessBoard);
             for (int i = 0; i < boardSize; i++)
                 for (int j = 0; j < boardSize; j++)
-                    if ((i != j)&& (i == 1 && j==16))
                     {
                          validMove = isValid(player, i, j, clone);
                         if (validMove)
